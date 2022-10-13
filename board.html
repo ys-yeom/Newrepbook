@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./borad.css">
+    <title>상담내역</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col"> 
+            <!-- 네비게이션 바 -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-warning bg-opacity-25 navbar-fixed-top">
+    <div class="container-fluid"> -->
+<!-- 사진 누르면 홈으로 돌아오기 -->
+      <!-- <a class="navbar-brand" href="home.html">
+        <img src="./요리조리1.png" width="200" height="70" style="border: 01px solid rgba(0, 0, 0, 0.363);">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              레시피
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">등록 및 관리</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">후기</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              쇼핑
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">등록 및 관리</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">주문, 취소, 반품</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">후기, 문의</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">매출</a>
+          </li>
+        </ul>
+
+        <li><a id="main_name"></a></li>
+        <form class="d-flex" role="logout">
+          <button type="button" class="btn btn-light login">로그아웃</button>
+        </form>
+
+      </div>
+    </div>
+  </nav> -->
+    </div>
+</div> 
+    <br>
+    <br>
+
+    <!-- <hr class="myHr">  -->
+    <div class="row">
+        <div class="col-7">
+            <h2>상담 내역 게시판</h2>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                  <form class="d-flex">
+                    <select class="form-select myjob" id="type" aria-label="Default select example" id="my">
+                        <option value="상담자">상담자</option>
+                        <option value="작성일">작성일</option>
+                      </select>
+                      
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="myser">
+                    <button class="btn btn-outline-success" type="submit" id="myser2">검색</button>
+                  </form>
+                </div>
+              
+              </nav>
+            
+        </div>
+        <div class="col">
+          
+        </div>
+    </div>
+   
+    <div class="row">
+        <div class="col">
+            <table class="table table-hover mytb">
+                    <thead class="table-light">
+                        <thead>
+                          
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">상담자</th>
+                            <th scope="col">조회수</th>
+                            <th scope="col">작성일</th>
+                        </tr>
+                        </thead>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>@mdo</td>
+                        <td>@</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>@mdo</td>
+                        <td>@</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@</td>
+                        <td>@mdo</td>
+                        <td>@</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@</td>
+                        <td>@mdo</td>
+                        <td>@</td>
+                      </tr>
+                    </tbody>
+                    
+                  </table>
+        </div>
+    </div>
+    <div class="col-5">
+        <button class="btn btn-outline-secondary mybtn" type="button">글쓰기</button> 
+    </div>
+</div>
+
+   
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

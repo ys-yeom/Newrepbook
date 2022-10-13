@@ -1,0 +1,18 @@
+.container{
+    /* border: 1px solid green;  */
+    height: 800px;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+.container2{
+     border: 1px solid green; 
+     padding: 20px;
+     border-radius: 20px;
+     top: 33%;
+    
+}
+#finish{
+    margin-left: 1200px;
+}
