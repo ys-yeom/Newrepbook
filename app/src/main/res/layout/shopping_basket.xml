@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/shopping_basket"
+        android:layout_width="365dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="48dp"
+                android:background="#B4B4FF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="730dp">
+
+                    <ImageButton
+                        android:id="@+id/shopping_basket_cancel"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel"></ImageButton>
+
+                    <TextView
+                        android:layout_width="123dp"
+                        android:layout_height="39dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="90dp"
+                        android:text="장바구니"
+                        android:textSize="27dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="-80dp"
+                        android:layout_marginTop="85dp"
+                        android:text="25,000원"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="50dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-190dp"
+                    android:layout_marginTop="50dp"
+                    android:text="냄비"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:layout_width="36dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="40dp"
+                    android:checked="true" />
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="-368dp"
+                    android:layout_marginTop="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pot" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="185dp"
+                    android:background="#000000" />
+
+<!--                /*2ww*/-->
+                <TextView
+                    android:layout_width="229dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-190dp"
+                    android:layout_marginTop="188dp"
+                    android:text="고기"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:layout_width="36dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="-70dp"
+                    android:layout_marginTop="175dp"
+                    android:checked="true" />
+
+                <ImageView
+                    android:layout_width="165dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="-368dp"
+                    android:layout_marginTop="195dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pot" />
+
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="220dp"
+                    android:text="32,000원"
+                    android:textSize="15dp" />
+
+               <!--가격-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="333dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-360dp"
+                    android:layout_marginTop="520dp"
+                    android:text="총 상품 가격 : "
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-120dp"
+                    android:layout_marginTop="560dp"
+                    android:text="총 배송비 :"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-120dp"
+                    android:layout_marginTop="600dp"
+                    android:text="총 결제 예상금액 :"
+                    android:textSize="20dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="500dp"
+                    android:background="#000000" />
+
+<!--                합계-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="660dp"
+                    android:background="#000000" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="-360dp"
+                    android:layout_marginTop="670dp"
+                    android:checked="true"
+                    android:text="전체" />
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="670dp"
+                    android:text="합계 : 1111"
+                    android:textColor="#000" />
+
+<!--                주문버튼-->
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="670dp"
+                    android:text="주문하기"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/setting"
+        android:layout_width="365dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="48dp"
+                android:background="#B4B4FF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="730dp">
+
+                    <ImageButton
+                        android:id="@+id/setting_cancel"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel"></ImageButton>
+
+                    <TextView
+                        android:layout_width="123dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:text="설정"
+                        android:textSize="27dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="55dp"
+                    android:background="#000000" />
+
+<!--                회원 이름-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="-360dp"
+                    android:text="돌굴러가유"
+                    android:textSize="20dp"/>
+
+<!--                <TextView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginTop="60dp"-->
+<!--                    android:layout_marginLeft="-60dp"-->
+<!--                    android:text="돌굴러가유"-->
+<!--                    android:textSize="20dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_marginLeft="-60dp"-->
+<!--                    android:text="돌굴러가유"-->
+<!--                    android:textSize="20dp"/>-->
+<!--                주소 수정-->
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="257dp"
+                    android:layout_marginLeft="-103dp"
+                    android:text="주소 수정"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="330dp"
+                    android:layout_marginLeft="-97dp"
+                    android:background="@color/white"/>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="408dp"
+                    android:layout_marginLeft="-80dp"
+                    android:text="수정"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-500dp"
+                    android:layout_marginTop="285dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="460dp"
+                    android:layout_marginLeft="-360dp"
+                    android:text="휴대폰 번호 수정"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="530dp"
+                    android:layout_marginLeft="-149dp"
+                    android:background="@color/white"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="608dp"
+                    android:layout_marginLeft="-80dp"
+                    android:text="수정"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="490dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="660dp"
+                    android:layout_marginLeft="-357dp"
+                    android:text="현재 버전"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="660dp"
+                    android:layout_marginLeft="-2dp"
+                    android:text="22.1.1"
+                    android:textSize="18dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="690dp"
+                    android:background="#000000" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

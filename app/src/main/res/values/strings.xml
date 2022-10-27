@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Newrep book</string>
+
+    <string name="naver_client_id">PReGAZWhhyyxa9o_JgSL</string>
+    <string name="naver_client_secret">DnRqieDAbs</string>
+    <string name="naver_client_name">NewrepBook</string>
+    <string name="request_permission">Rhis sample needs camera permission</string>
+
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+</resources>

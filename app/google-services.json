@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "849789232224",
+    "firebase_url": "https://newrepbook-4eef6-default-rtdb.firebaseio.com",
+    "project_id": "newrepbook-4eef6",
+    "storage_bucket": "newrepbook-4eef6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849789232224:android:6af19bca974147dac54f05",
+        "android_client_info": {
+          "package_name": "com.example.newrepbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849789232224-it4ijuqjskcm42mmviij1dt5e6vusj8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newrepbook",
+            "certificate_hash": "95cba1b98096d681277afa8ea82fc00810c0db87"
+          }
+        },
+        {
+          "client_id": "849789232224-vb5u7a9ijr0r574ogec37oovoiiavjq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7bdUPFvGmYuAWua3yon3CdNu_QvqCMmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849789232224-vb5u7a9ijr0r574ogec37oovoiiavjq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

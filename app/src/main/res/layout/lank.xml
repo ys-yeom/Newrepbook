@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lank"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="650dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="413dp"
+                    android:layout_height="800dp"
+                    android:background="#B7A4EE"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="뉴렢북의 최고의 음식"
+                        android:textSize="35dp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+
+                    <!--  첫번째 음식  -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/cheese_tripe"/>
+                        <Button
+                            android:layout_marginLeft="-9dp"
+                            android:layout_width="250dp"
+                            android:layout_height="60dp"
+                            android:background="#00ff0000"
+                            android:textColor="#000000"
+                            android:text="매콤한 치즈곱창"
+                            android:textSize="28dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="-100dp"
+                        android:layout_marginLeft="181dp"
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:text="돌굴러가유"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="185dp"
+                        android:src="@drawable/like1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="1.2"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="-35dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="조회수 1.2만"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginTop="-25dp"/>
+
+
+                   <!-- 2번째 음식 -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="123dp"
+                            android:src="@drawable/food1"/>
+                        <Button
+                            android:layout_marginLeft="-9dp"
+                            android:layout_width="250dp"
+                            android:layout_height="60dp"
+                            android:background="#00ff0000"
+                            android:textColor="#000000"
+                            android:text="까르보나라 당면"
+                            android:textSize="28dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="-100dp"
+                        android:layout_marginLeft="181dp"
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:text="바위굴러가유"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="185dp"
+                        android:src="@drawable/like1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="1.2"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="-35dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="조회수 1.2만"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginTop="-25dp"/>
+
+
+
+                    <!--      세번째 음식    -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/food2"/>/*centerCrop 170 120 사이즈에 이미지 꽉 채우기*/
+                        <Button
+                            android:layout_marginLeft="-9dp"
+                            android:layout_width="250dp"
+                            android:layout_height="60dp"
+                            android:background="#00ff0000"
+                            android:textColor="#000000"
+                            android:text="고구마 피자"
+                            android:gravity="left"
+                            android:textSize="28dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="-100dp"
+                        android:layout_marginLeft="180dp"
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:text="자갈굴러가유"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="185dp"
+                        android:src="@drawable/like1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="1.2"
+                        android:textSize="25dp"
+                        android:layout_marginLeft="220dp"
+                        android:layout_marginTop="-35dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="조회수 1.2만"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginTop="-25dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

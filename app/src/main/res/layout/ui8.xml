@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:andorid="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/button0"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mike_remove"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/button5"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="360dp"
+                android:layout_marginTop="-45dp"
+                android:background="@drawable/mike_remove"></ImageButton>
+
+            <Button
+                android:id="@+id/menubtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/menu_remove"></Button>
+
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="마지막 설명 마지막 설명 마지막 설명 마지막 설명 마지막 설명 마지막 설명 마지막 설명 마지막 설명 마지막 설명 마지막 설명"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:text="요리 후기 | Q&amp;A"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="25dp">
+                </TextView>
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4.5"
+                    android:textSize="28dp"
+                    android:layout_marginLeft="70dp"></TextView>
+
+                <RatingBar
+                    android:layout_marginTop="-38dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_marginLeft="140dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        andorid:src="@drawable/food1"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="-60dp"
+                    android:text="이름"
+                    android:textSize="20dp" />
+
+                <RatingBar
+                    android:layout_marginTop="-32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_marginLeft="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기
+후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="작성 일자"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        andorid:src="@drawable/food1"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="-60dp"
+                    android:text="이름"
+                    android:textSize="20dp" />
+
+                <RatingBar
+                    android:layout_marginTop="-32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_marginLeft="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기
+후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="작성 일자"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        andorid:src="@drawable/food1"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="-60dp"
+                    android:text="이름"
+                    android:textSize="20dp" />
+
+                <RatingBar
+                    android:layout_marginTop="-32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_marginLeft="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기
+후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기 후기"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="작성 일자"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="후기 전체보기>"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:text="요리 후기 남기기"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="75dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    andorid:src="@drawable/food1"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="-60dp"
+                android:text="이름"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="30dp"
+                android:text="요리에 대한 질문 요리에 대한 질문 요리에 대한 질문 요리에 대한 질문요리에 대한 질문요리에 대한 질문요리에 대한 질문
+ 요리에 대한 질문 요리에 대한 질문요"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="작성 일자"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        andorid:src="@drawable/food1"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="-60dp"
+                    android:text="이름"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="요리에 대한 질문 요리에 대한 질문 요리에 대한 질문 요리에 대한 질문요리에 대한 질문요리에 대한 질문요리에 대한 질문
+ 요리에 대한 질문 요리에 대한 질문요"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="작성 일자"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    app:cardCornerRadius="75dp"
+                    app:cardElevation="0dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        andorid:src="@drawable/food1"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="-60dp"
+                    android:text="이름"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="요리에 대한 질문 요리에 대한 질문 요리에 대한 질문 요리에 대한 질문요리에 대한 질문요리에 대한 질문요리에 대한 질문
+ 요리에 대한 질문 요리에 대한 질문요"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="작성 일자"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="후기 전체보기>"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="380dp"
+                    android:layout_height="match_parent"
+                    android:text="질문 남기기"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <LinearLayout
+        android:id="@+id/level"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/elementary_level"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="22dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#FF6495ED"
+            android:layout_marginTop="8dp"
+            android:text="초급" />
+
+        <Button
+            android:id="@+id/intermediate_level"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#FF6495ED"
+            android:layout_marginTop="8dp"
+            android:text="중급" />
+
+        <Button
+            android:id="@+id/high_level"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#FF6495ED"
+            android:layout_marginTop="8dp"
+            android:text="고급" />
+
+    </LinearLayout>
+
+</LinearLayout>

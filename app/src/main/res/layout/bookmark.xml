@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bookmarking"
+        android:layout_width="365dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="48dp"
+                android:background="#B4B4FF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="730dp">
+
+                    <ImageButton
+                        android:id="@+id/bookmarking_cancel"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel"></ImageButton>
+
+                    <TextView
+                        android:layout_width="123dp"
+                        android:layout_height="46dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="90dp"
+                        android:text="즐겨찾기"
+                        android:textSize="27dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="50dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="229dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-190dp"
+                    android:layout_marginTop="60dp"
+                    android:text="냄비"
+                    android:textSize="20dp" />
+
+
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pot" />
+
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="90dp"
+                    android:text="25,000원"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="185dp"
+                    android:background="#000000" />
+
+<!--                //2-->
+                <TextView
+                    android:layout_width="229dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-190dp"
+                    android:layout_marginTop="190dp"
+                    android:text="고기"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="195dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pot" />
+
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="220dp"
+                    android:text="32,000원"
+                    android:textSize="15dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginLeft="-400dp"
+                    android:layout_marginTop="323dp"
+                    android:background="#000000" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

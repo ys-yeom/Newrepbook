@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="340dp"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="10dp">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/menubtn"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="-54dp"
+            android:layout_marginStart="350dp"
+            android:background="@drawable/menu_remove"></Button>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical">
+
+    <!--   검색한 레시피 제목    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="잡채"
+        android:textSize="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="170dp"/>
+
+    <ImageView
+        android:scaleType = "fitXY"
+        android:layout_width="160dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="-42dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돌굴러가유"
+            android:textSize="20dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="-100dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/like1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="1.2"
+        android:textSize="25dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="-35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="(+1,002)"
+            android:textSize="20dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="-27dp"/>
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="-5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical">
+
+        <!--   검색한 레시피 제목    -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="모둠 전"
+            android:textSize="27dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="170dp"/>
+
+        <ImageView
+            android:scaleType = "fitXY"
+            android:layout_width="160dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="-42dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돌굴러가유"
+            android:textSize="20dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="-100dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/like1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="1.2"
+            android:textSize="25dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="-35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="(+1,002)"
+            android:textSize="20dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="-27dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="-5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical">
+
+        <!--   검색한 레시피 제목    -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="떡국"
+            android:textSize="27dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="170dp"/>
+
+        <ImageView
+            android:scaleType = "fitXY"
+            android:layout_width="160dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="-42dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돌굴러가유"
+            android:textSize="20dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="-100dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/like1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="1.2"
+            android:textSize="25dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="-35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="(+1,002)"
+            android:textSize="20dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="-27dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="-5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="vertical">
+
+        <!--   검색한 레시피 제목    -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="송편"
+            android:textSize="26dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="170dp"/>
+
+        <ImageView
+            android:scaleType = "fitXY"
+            android:layout_width="160dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="-42dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돌굴러가유"
+            android:textSize="20dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="-100dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/like1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="1.2"
+            android:textSize="25dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="-35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="(+1,002)"
+            android:textSize="20dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="-27dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="-5dp"
+        android:background="#000000" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
