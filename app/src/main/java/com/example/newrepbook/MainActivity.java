@@ -10,6 +10,7 @@ import androidx.room.Room;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
@@ -21,6 +22,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -40,9 +42,11 @@ public class MainActivity extends AppCompatActivity {
     Animation tranlateLeftAnim;
     Animation tranlateRightAnim;
     LinearLayout menu, bookmark;
-    Button menubtn, bookmark_btn;
+    Button menubtn, bookmark_btn, orderbtn, delete_btn, basket_btn;
+    CheckBox chk_one, chk_two, chk_all;
     ImageButton cancel, bookmark_cancel;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
         Button tab_Item6 = (Button) findViewById(R.id.tab_Item6);
         Button tab_Item7 = (Button) findViewById(R.id.tab_Item7);
 //        Button tab_Item8 = (Button) findViewById(R.id.tab_Item8);
+
+        chk_one = (CheckBox) findViewById(R.id.chk_one);
+        chk_two = (CheckBox) findViewById(R.id.chk_two);
+        chk_all = (CheckBox) findViewById(R.id.chk_all);
 
 //        findViewById(R.id.logout_btn).setOnClickListener(onClickListener);
 //        findViewById(R.id.bookmark_btn).setOnClickListener(onClickListener);
@@ -251,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
         // 찜한 목록 버튼 누른 후
         LinearLayout product_storage = findViewById(R.id.product_storage);
 
-        product_storage.bringToFront();
+        product_storage.bringToFront();  // 맨앞으로 보이기
 
         Button product_storage_btn = (Button) findViewById(R.id.product_storage_btn);
 
@@ -277,7 +285,7 @@ public class MainActivity extends AppCompatActivity {
         //장바구니 버튼 누른 후
         LinearLayout product_storage2 = findViewById(R.id.product_storage2);
 
-        product_storage2.bringToFront();
+        product_storage2.bringToFront();  // 맨앞으로 보이기
 
         Button product_storage2_btn = (Button) findViewById(R.id.product_storage2_btn);
 
@@ -302,7 +310,7 @@ public class MainActivity extends AppCompatActivity {
         //최근 본 상품 누른 후
         LinearLayout product = findViewById(R.id.product);
 
-        product.bringToFront();
+        product.bringToFront();  // 맨앞으로 보이기
 
         Button product_btn = (Button) findViewById(R.id.product_btn);
 
@@ -327,7 +335,7 @@ public class MainActivity extends AppCompatActivity {
        //주문 내역 누른 후
         LinearLayout product_list = findViewById(R.id.product_list);
 
-        product_list.bringToFront();
+        product_list.bringToFront();  // 맨앞으로 보이기
 
         Button product_list_btn = (Button) findViewById(R.id.product_list_btn);
 
@@ -352,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
         //내가 쓴 후기 누른 후
         LinearLayout evaluation = findViewById(R.id.evaluation);
 
-        evaluation.bringToFront();
+        evaluation.bringToFront();  // 맨앞으로 보이기
 
         Button evaluation_btn = (Button) findViewById(R.id.evaluation_btn);
 
@@ -377,7 +385,7 @@ public class MainActivity extends AppCompatActivity {
         //설정 누른 후
         LinearLayout setting = findViewById(R.id.setting);
 
-        setting.bringToFront();
+        setting.bringToFront();  // 맨앞으로 보이기
 
         Button setting_btn = (Button) findViewById(R.id.setting_btn);
 
@@ -398,9 +406,37 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        //장바구니 주문하기 버튼
+        orderbtn = findViewById(R.id.orderbtn);
+        orderbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), shopping_basket.class);
+                startActivity(intent);
+            }
+        });
+
+        //찜한 상품 삭제 버튼
+        delete_btn = findViewById(R.id.delete_btn);
+        delete_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        //찜한 상품 장바구니 버튼
+//        LinearLayout product_storage2 = findViewById(R.id.product_storage2);
+
+        basket_btn = findViewById(R.id.basket_btn);
+        basket_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                product_storage2.setVisibility(VISIBLE);
+            }
+        });
     }
-
-
 
 
     View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -482,5 +518,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+
+
 
 }

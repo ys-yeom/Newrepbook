@@ -55,6 +55,7 @@
         <activity android:name=".CameraActivity"></activity>
         <activity android:name=".GalleryActivity"></activity>
         <activity android:name=".AddPostActivity"></activity>
+        <activity android:name=".shopping_basket"></activity>
         <activity android:name=".ui1">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->

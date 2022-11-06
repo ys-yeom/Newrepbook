@@ -43,7 +43,7 @@
                         android:layout_marginTop="4dp"
                         android:layout_marginRight="90dp"
                         android:text="찜한 상품"
-                        android:textSize="30dp" />
+                        android:textSize="27dp" />
 
                 </LinearLayout>
 
@@ -58,45 +58,47 @@
                     android:layout_width="229dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="-190dp"
-                    android:layout_marginTop="102dp"
+                    android:layout_marginTop="60dp"
                     android:text="냄비"
-                    android:textSize="27dp" />
+                    android:textSize="20dp" />
 
                     <ImageView
                         android:layout_width="160dp"
                         android:layout_height="120dp"
                         android:layout_marginLeft="-400dp"
-                        android:layout_marginTop="100dp"
+                        android:layout_marginTop="60dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/pot" />
 
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="27dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="85dp"
                     android:text="25,000원"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <Button
-                    android:layout_width="70dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/delete_btn"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
                     android:layout_marginLeft="-170dp"
-                    android:layout_marginTop="185dp"
+                    android:layout_marginTop="135dp"
                     android:text="삭제"/>
 
                 <Button
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/basket_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
                     android:layout_marginLeft="6dp"
-                    android:layout_marginTop="185dp"
+                    android:layout_marginTop="135dp"
                     android:text="장바구니"/>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3px"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="233dp"
+                    android:layout_marginTop="187dp"
                     android:background="#000000" />
 
 <!--               // 2-->
@@ -104,45 +106,45 @@
                     android:layout_width="229dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="-190dp"
-                    android:layout_marginTop="240dp"
+                    android:layout_marginTop="190dp"
                     android:text="상추"
-                    android:textSize="27dp" />
+                    android:textSize="20dp" />
 
                 <ImageView
                     android:layout_width="160dp"
                     android:layout_height="120dp"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="240dp"
+                    android:layout_marginTop="194dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/lettuce" />
 
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="27dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="270dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="220dp"
                     android:text="27,000원"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <Button
-                    android:layout_width="70dp"
-                    android:layout_height="50dp"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
                     android:layout_marginLeft="-170dp"
-                    android:layout_marginTop="325dp"
+                    android:layout_marginTop="265dp"
                     android:text="삭제"/>
 
                 <Button
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
                     android:layout_marginLeft="6dp"
-                    android:layout_marginTop="325dp"
+                    android:layout_marginTop="265dp"
                     android:text="장바구니"/>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3px"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="380dp"
+                    android:layout_marginTop="320dp"
                     android:background="#000000" />
 
 <!--                //3-->
@@ -150,45 +152,45 @@
                     android:layout_width="229dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="-190dp"
-                    android:layout_marginTop="390dp"
+                    android:layout_marginTop="320dp"
                     android:text="계란"
-                    android:textSize="27dp" />
+                    android:textSize="20dp" />
 
                 <ImageView
                     android:layout_width="160dp"
                     android:layout_height="120dp"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="390dp"
+                    android:layout_marginTop="325dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/egg" />
 
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="27dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="420dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="350dp"
                     android:text="18,000원"
-                    android:textSize="20dp" />
+                    android:textSize="15dp" />
 
                 <Button
-                    android:layout_width="70dp"
-                    android:layout_height="50dp"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
                     android:layout_marginLeft="-170dp"
-                    android:layout_marginTop="475dp"
+                    android:layout_marginTop="400dp"
                     android:text="삭제"/>
 
                 <Button
-                    android:layout_width="100dp"
-                    android:layout_height="50dp"
+                    android:layout_width="90dp"
+                    android:layout_height="45dp"
                     android:layout_marginLeft="6dp"
-                    android:layout_marginTop="475dp"
+                    android:layout_marginTop="400dp"
                     android:text="장바구니"/>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3px"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="530dp"
+                    android:layout_marginTop="450dp"
                     android:background="#000000" />
             </LinearLayout>
         </ScrollView>

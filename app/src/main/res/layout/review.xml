@@ -35,36 +35,36 @@
                         android:src="@drawable/cancel"></ImageButton>
 
                     <TextView
-                        android:layout_width="123dp"
+                        android:layout_width="77dp"
                         android:layout_height="46dp"
-                        android:layout_marginLeft="-38dp"
-                        android:layout_marginTop="48dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="4dp"
                         android:layout_marginRight="90dp"
                         android:text="후기"
-                        android:textSize="30dp" />
+                        android:textSize="27dp" />
                 </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3px"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="95dp"
+                    android:layout_marginTop="45dp"
                     android:background="#000000" />
 
 
                 <TextView
-                    android:layout_width="229dp"
+                    android:layout_width="220dp"
                     android:layout_height="30dp"
-                    android:layout_marginLeft="-190dp"
-                    android:layout_marginTop="102dp"
+                    android:layout_marginLeft="-15dp"
+                    android:layout_marginTop="12dp"
                     android:text="냄비"
-                    android:textSize="27dp" />
+                    android:textSize="20dp" />
 
                 <ImageView
-                    android:layout_width="165dp"
-                    android:layout_height="130dp"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="100dp"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="-588dp"
+                    android:layout_marginTop="53dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/pot" />
 
@@ -72,7 +72,7 @@
                     android:layout_width="173dp"
                     android:layout_height="27dp"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
+                    android:layout_marginTop="90dp"
                     android:text="좋아요"
                     android:textSize="18dp" />
 
@@ -80,21 +80,21 @@
                     android:layout_width="70dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="-170dp"
-                    android:layout_marginTop="190dp"
+                    android:layout_marginTop="130dp"
                     android:text="수정"/>
 
                 <Button
                     android:layout_width="70dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="6dp"
-                    android:layout_marginTop="190dp"
+                    android:layout_marginTop="130dp"
                     android:text="삭제"/>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3px"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="235dp"
+                    android:layout_marginTop="179dp"
                     android:background="#000000" />
 
 <!--                //2번쨰-->
@@ -102,23 +102,23 @@
                     android:layout_width="229dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="-190dp"
-                    android:layout_marginTop="240dp"
+                    android:layout_marginTop="185dp"
                     android:text="주방도구"
-                    android:textSize="27dp" />
+                    android:textSize="20dp" />
 
                 <ImageView
-                    android:layout_width="165dp"
-                    android:layout_height="130dp"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="240dp"
+                    android:layout_marginTop="185dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/tool" />
 
                 <TextView
                     android:layout_width="173dp"
                     android:layout_height="48dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="270dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="220dp"
                     android:text="아주 좋아요 사용하기 편해요"
                     android:textSize="18dp" />
 
@@ -126,14 +126,14 @@
                     android:layout_width="70dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="-170dp"
-                    android:layout_marginTop="330dp"
+                    android:layout_marginTop="295dp"
                     android:text="수정"/>
 
                 <Button
                     android:layout_width="70dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="6dp"
-                    android:layout_marginTop="330dp"
+                    android:layout_marginTop="295dp"
                     android:text="삭제"/>
 
 
@@ -141,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="3px"
                     android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="380dp"
+                    android:layout_marginTop="340dp"
                     android:background="#000000" />
 
             </LinearLayout>

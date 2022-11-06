@@ -1054,8 +1054,6 @@
     </LinearLayout>
 
 
-
-
 <!--    &lt;!&ndash;    요리 노트 페이지    &ndash;&gt;-->
 
     <LinearLayout
@@ -1240,8 +1238,6 @@
     </LinearLayout>
     </ScrollView>
     </LinearLayout>
-
-
 
 
 
@@ -1570,8 +1566,6 @@
 
 
 
-
-
         <!-- 2번째 음식 -->
 
         <View
@@ -1702,6 +1696,7 @@
             android:id="@+id/bookmarking"
             android:layout_width="365dp"
             android:layout_height="match_parent"
+            android:visibility="gone"
             android:layout_gravity="right"
             android:orientation="vertical">
 
@@ -1818,6 +1813,7 @@
 <!--        최근 본 상품-->
         <LinearLayout
             android:id="@+id/product"
+            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
@@ -1936,6 +1932,7 @@
 <!--        찜한 목록-->
         <LinearLayout
             android:id="@+id/product_storage"
+            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
@@ -2010,6 +2007,7 @@
                         android:textSize="20dp" />
 
                     <Button
+                        android:id="@+id/delete_btn"
                         android:layout_width="70dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="-170dp"
@@ -2017,6 +2015,7 @@
                         android:text="삭제"/>
 
                     <Button
+                        android:id="@+id/basket_btn"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="6dp"
@@ -2056,6 +2055,7 @@
                         android:textSize="20dp" />
 
                     <Button
+                        android:id="@+id/delete2_btn"
                         android:layout_width="70dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="-170dp"
@@ -2063,6 +2063,7 @@
                         android:text="삭제"/>
 
                     <Button
+                        android:id="@+id/basket2_btn"
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="6dp"
@@ -2129,6 +2130,7 @@
 <!--        장바구니-->
         <LinearLayout
             android:id="@+id/product_storage2"
+            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
@@ -2192,6 +2194,7 @@
                         android:textSize="27dp" />
 
                     <CheckBox
+                        android:id="@+id/chk_one"
                         android:layout_width="36dp"
                         android:layout_height="37dp"
                         android:layout_marginLeft="60dp"
@@ -2223,6 +2226,7 @@
                         android:textSize="27dp" />
 
                     <CheckBox
+                        android:id="@+id/chk_two"
                         android:layout_width="36dp"
                         android:layout_height="37dp"
                         android:layout_marginLeft="-70dp"
@@ -2293,6 +2297,7 @@
                         android:background="#000000" />
 
                     <CheckBox
+                        android:id="@+id/chk_all"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_marginLeft="-360dp"
@@ -2310,6 +2315,7 @@
 
                     <!--                주문버튼-->
                     <Button
+                        android:id="@+id/orderbtn"
                         android:layout_width="160dp"
                         android:layout_height="60dp"
                         android:layout_marginLeft="10dp"
@@ -2322,6 +2328,7 @@
 <!--        주문 내역-->
         <LinearLayout
             android:id="@+id/product_list"
+            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
@@ -2465,6 +2472,7 @@
 <!--        내가 쓴 후기-->
         <LinearLayout
             android:id="@+id/evaluation"
+            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
@@ -2611,6 +2619,7 @@
 <!--        설정-->
         <LinearLayout
             android:id="@+id/setting"
+            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
@@ -2953,6 +2962,7 @@
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
+
 
 
 </FrameLayout>

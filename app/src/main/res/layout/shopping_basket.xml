@@ -186,11 +186,13 @@
 
 <!--                주문버튼-->
                 <Button
-                    android:layout_width="160dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/orderbtn"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="670dp"
-                    android:text="주문하기"/>
+                    android:text="주문하기"
+                    android:textSize="20dp"/>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
