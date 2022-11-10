@@ -17,6 +17,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+<!--                제목-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="70dp">
@@ -37,6 +38,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+<!--                재료/모두담기-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -70,6 +72,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+<!--                첫번째 재료-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="95dp">
@@ -122,6 +125,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+<!--                두번째 재료-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
@@ -175,6 +179,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+<!--                세번째 재료-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp">
@@ -227,6 +232,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+<!--                뷰-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="15dp"
@@ -239,6 +245,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+                <!--                양념/모두담기-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -273,6 +280,7 @@
 
                 </LinearLayout>
 
+<!--                첫번째 양념-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="95dp"
@@ -326,6 +334,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+<!--                두번째 양념-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="95dp"
@@ -379,6 +388,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+<!--                세번째 양념-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="95dp"
@@ -432,6 +442,7 @@
                         android:background="#000000" />
                 </LinearLayout>
 
+<!--                장바구니 버튼-->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="80dp">
