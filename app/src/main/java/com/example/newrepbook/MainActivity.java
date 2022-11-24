@@ -27,6 +27,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.SearchView;
 
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     Button menubtn, bookmark_btn, orderbtn, delete_btn, basket_btn;
     CheckBox chk_one, chk_two, chk_all;
     ImageButton cancel, bookmark_cancel;
+    SearchView search_view;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -53,7 +55,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main_home);
         mAuth = FirebaseAuth.getInstance();
 
-//        LinearLayout bottom_btn = (LinearLayout) findViewById(R.id.bottom_btn);
+//        setUpSearch(); //검색 기능 셋팅
+
+//       LinearLayout bottom_btn = (LinearLayout) findViewById(R.id.bottom_btn);
+
 
         ViewPager pager = (ViewPager) findViewById(R.id.viewpager);
         ViewPager pager2 = (ViewPager) findViewById(R.id.viewpager2);
@@ -436,7 +441,40 @@ public class MainActivity extends AppCompatActivity {
                 product_storage2.setVisibility(VISIBLE);
             }
         });
+
+        //검색 창 클릭시 페이지 이동
+//        search_view = findViewById(R.id.search_view);
+//        search_view.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), search_view.class);
+//               startActivity(intent);
+//
+//            }
+//        });
+
     }
+
+    private void setUpSearch() {
+        SearchView searchView = findViewById(R.id.searchView);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+//                ArrayList<Food> filterFood = new ArrayList<Food>()
+
+                return false;
+            }
+        });
+    }
+
+
 
 
     View.OnClickListener onClickListener = new View.OnClickListener() {

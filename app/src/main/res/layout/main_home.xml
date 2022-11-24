@@ -2,1703 +2,1725 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/floatingActionButton"-->
-<!--        android:layout_width="95dp"-->
-<!--        android:layout_height="85dp"-->
-<!--        android:layout_marginStart="330dp"-->
-<!--        android:layout_marginTop="650dp"-->
-<!--        android:layout_weight="1"-->
-<!--        android:clickable="true"-->
-<!--        app:srcCompat="@drawable/ic_baseline_add_24" />-->
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/floatingActionButton"-->
+    <!--        android:layout_width="95dp"-->
+    <!--        android:layout_height="85dp"-->
+    <!--        android:layout_marginStart="330dp"-->
+    <!--        android:layout_marginTop="650dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:clickable="true"-->
+    <!--        app:srcCompat="@drawable/ic_baseline_add_24" />-->
 
     <FrameLayout
-    android:id="@+id/first"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <ScrollView
+        android:id="@+id/first"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp">
-
-<!--                <Button-->
-<!--                    android:id="@+id/logout_btn"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="로그아웃" />-->
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="340dp"
-                    android:layout_height="match_parent"
-                    tools:context=".MainActivity">
-
-                    <androidx.appcompat.widget.Toolbar
-                        android:layout_width="100dp"
-                        android:layout_height="?attr/actionBarSize"
-                        app:contentInsetStart="0dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:paddingStart="16dp"
-                            android:paddingEnd="16dp">
-
-                            <androidx.appcompat.widget.SearchView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" >
-
-                            </androidx.appcompat.widget.SearchView>
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </androidx.appcompat.widget.Toolbar>
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <Button
-                    android:id="@+id/menubtn"
-                    android:layout_width="55dp"
-                    android:layout_height="55dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/menu_remove"></Button>
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="3px"
-                android:background="#000000" />
-
-            <LinearLayout
-                android:id="@+id/top"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/btn_first"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:background="#00ff0000"
-                        android:layout_weight="1"
-                        android:text="Home" />
-
-                    <Button
-                        android:id="@+id/btn_second"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:background="#00ff0000"
-                        android:layout_weight="1"
-                        android:text="레시피" />
-
-                    <Button
-                        android:id="@+id/btn_third"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#00ff0000"
-                        android:text="랭킹"
-                        android:textColor="#000000" />
-
-<!--                                        <Button-->
-<!--                        android:id="@+id/btn_four"-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_weight="1"-->
-<!--                        android:textColor="#000000"-->
-<!--                        android:background="#00ff0000"-->
-<!--                        android:text="꿀팁" />-->
-            </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-
-
-                <LinearLayout
-                    android:id="@+id/ii1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <Button
-                        android:id="@+id/tab_Item5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:background="#00ff0000"
-                        android:layout_weight="1"
-                        android:text="종류" />
-
-                    <Button
-                        android:id="@+id/tab_Item6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:background="#00ff0000"
-                        android:layout_weight="1"
-                        android:text="상황" />
-
-                    <Button
-                        android:id="@+id/tab_Item7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:background="#00ff0000"
-                        android:layout_weight="1"
-                        android:text="재료" />
-
-                    <Button
-                        android:id="@+id/tab_Item8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#000000"
-                        android:background="#00ff0000"
-                        android:layout_weight="1"
-                        android:text= "난이도" />
-
-            </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/viewpager2"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:layout_below="@+id/top">
-                </androidx.viewpager.widget.ViewPager>
-
-
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/viewpager"
-                    android:layout_width="match_parent"
-                    android:layout_height="730dp"
-                    android:layout_below="@+id/top"></androidx.viewpager.widget.ViewPager>
-
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-
-
-
-
-
-
-
-<!--&lt;!&ndash; 안좋아하는 음식 &ndash;&gt;-->
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="match_parent"
-        android:id="@+id/hate_food"
-        android:visibility="gone"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:background="#B4B4FF">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:layout_marginLeft="48dp"
-        android:layout_width="365dp">
-
-        <!-- 취소 버튼 -->
-        <ImageButton
-            android:id="@+id/cancel2"
-            android:src="@drawable/cancel"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="-5dp"
-            android:layout_width="40dp"
-            android:layout_height="45dp"></ImageButton>
-
-
-        <Button
-            android:id="@+id/hate_btn1"
-            android:text="육류"
-            android:textSize="20dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn2"
-            android:text="해물류"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="-90dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn3"
-            android:text="채소"
-            android:textSize="20dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="255dp"
-            android:layout_marginTop="-90dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn4"
-            android:text="갑각류"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn5"
-            android:text="유제품"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="-90dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn6"
-            android:text="달걀"
-            android:textSize="20dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="255dp"
-            android:layout_marginTop="-90dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn7"
-            android:text="건어물"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn8"
-            android:text="견과류"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="-90dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn9"
-            android:text="과일류"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="255dp"
-            android:layout_marginTop="-90dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn10"
-            android:text="버섯류"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn11"
-            android:text="밀가루"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="-90dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn12"
-            android:text="쌀"
-            android:textSize="18dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="255dp"
-            android:layout_marginTop="-90dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-
-        <Button
-            android:id="@+id/hate_btn13"
-            android:text="곡류"
-            android:textSize="20dp"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-    </LinearLayout>
-    </ScrollView>
-    </LinearLayout>
-
-
-<!--&lt;!&ndash;  아래 버튼 4개  &ndash;&gt;-->
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:id="@+id/bottom_btn"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-
-            android:orientation="horizontal"
-
-            android:layout_width="fill_parent"
-
-            android:layout_height="wrap_content"
-
-            android:layout_weight="0.1">
-
-        </LinearLayout>
-    </LinearLayout>
-
-
-<!--&lt;!&ndash;  알레르기  &ndash;&gt;-->
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="match_parent"
-        android:id="@+id/allergy"
-        android:visibility="gone"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:background="#B4B4FF">
+        android:layout_height="wrap_content">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="right"
-                android:orientation="vertical"
-                android:layout_marginLeft="48dp"
-                android:layout_width="365dp">
+                android:orientation="vertical">
 
-                <!-- 취소 버튼 -->
-                <ImageButton
-                    android:id="@+id/cancel3"
-                    android:src="@drawable/cancel"
-                    android:scaleType="centerCrop"
-                    android:layout_marginTop="-5dp"
-                    android:layout_width="40dp"
-                    android:layout_height="45dp"/>
-
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="-40dp"
-                    android:textSize="25dp"
-                    android:text="알레르기 체크하기!"/>
+                    android:layout_height="60dp">
+
+                    <!--                <Button-->
+                    <!--                    android:id="@+id/logout_btn"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="로그아웃" />-->
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        tools:context=".MainActivity">
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:layout_width="330dp"
+                            android:layout_height="?attr/actionBarSize"
+                            android:layout_marginEnd="8dp"
+                            app:contentInsetStart="0dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.SearchView
+                                    android:id="@+id/search_view"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:queryHint="검색어를 입력하세요">
+
+                                </androidx.appcompat.widget.SearchView>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--                            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="match_parent"-->
+<!--                                android:paddingStart="16dp"-->
+<!--                                android:paddingEnd="16dp">-->
+
+<!--                                <androidx.appcompat.widget.SearchView-->
+<!--                                    android:id="@+id/search_view"-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_marginTop="8dp"-->
+<!--                                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                                    app:layout_constraintTop_toTopOf="parent"-->
+<!--                                    app:queryHint="검색어를 입력하세요">-->
+
+
+<!--                                </androidx.appcompat.widget.SearchView>-->
+<!--                            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                        </androidx.appcompat.widget.Toolbar>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <Button
+                        android:id="@+id/menubtn"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/menu_remove"></Button>
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="30dp"
                     android:background="#000000" />
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="우유 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
-
-                <View
+                <LinearLayout
+                    android:id="@+id/top"
                     android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-                <CheckBox
-                    android:layout_width="350dp"
                     android:layout_height="match_parent"
-                    android:text="호두 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                    android:orientation="vertical">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="난류(가금류) 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                        <Button
+                            android:id="@+id/btn_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00ff0000"
+                            android:text="Home"
+                            android:textColor="#000000" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                        <Button
+                            android:id="@+id/btn_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00ff0000"
+                            android:text="레시피"
+                            android:textColor="#000000" />
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="메밀 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                        <Button
+                            android:id="@+id/btn_third"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00ff0000"
+                            android:text="랭킹"
+                            android:textColor="#000000" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                        <!--                                        <Button-->
+                        <!--                        android:id="@+id/btn_four"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_weight="1"-->
+                        <!--                        android:textColor="#000000"-->
+                        <!--                        android:background="#00ff0000"-->
+                        <!--                        android:text="꿀팁" />-->
+                    </LinearLayout>
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="아황산류 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="대두 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                    <LinearLayout
+                        android:id="@+id/ii1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                        <Button
+                            android:id="@+id/tab_Item5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00ff0000"
+                            android:text="종류"
+                            android:textColor="#000000" />
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="복숭아 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                        <Button
+                            android:id="@+id/tab_Item6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00ff0000"
+                            android:text="상황"
+                            android:textColor="#000000" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                        <Button
+                            android:id="@+id/tab_Item7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00ff0000"
+                            android:text="재료"
+                            android:textColor="#000000" />
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="토마토 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                        <Button
+                            android:id="@+id/tab_Item8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00ff0000"
+                            android:text="난이도"
+                            android:textColor="#000000" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                    </LinearLayout>
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="땅콩 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="닭고기 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/top"></androidx.viewpager.widget.ViewPager>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="쇠고기 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="730dp"
+                        android:layout_below="@+id/top">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                        <LinearLayout
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="밀 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                            android:layout_width="fill_parent"
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                            android:layout_height="wrap_content"
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="고등어 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                            android:layout_weight="0.1"
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                            android:orientation="horizontal">
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="게 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                        </LinearLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
+                        <LinearLayout
+                            android:id="@+id/bottom_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="새우 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
+                        </LinearLayout>
+                    </androidx.viewpager.widget.ViewPager>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="돼지고기 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="오징어 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="조개류 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="홍합 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="전복 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3px"
-                    android:layout_marginLeft="-400dp"
-                    android:layout_marginTop="0dp"
-                    android:background="#000000" />
-
-                <CheckBox
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:text="굴 알레르기"
-                    android:textSize="20dp"
-                    android:paddingLeft="20dp"
-                    android:button="@null"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
-
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
-
-<!--        즐겨찾기        -->
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="match_parent"
-        android:id="@+id/bookmark"
-        android:visibility="gone"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:background="#B4B4FF">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:layout_marginLeft="48dp"
-        android:layout_width="365dp">
-
-    <!-- 취소 버튼 -->
-    <ImageButton
-        android:id="@+id/bookmark_cancel"
-        android:src="@drawable/cancel"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="-5dp"
-        android:layout_width="40dp"
-        android:layout_height="45dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="전체 숫자"
-            android:textSize="22dp"
-            android:layout_marginTop="-38dp"
-            android:layout_marginLeft="50dp"/>
-
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:text="폴더"
-            android:layout_marginLeft="260dp"
-            android:layout_marginTop="-35dp"
-            android:background="#00FF0000"
-            android:textColor="#000000"
-            android:textSize="18dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:layout_marginLeft="-400dp"
-            android:layout_marginTop="0dp"
-            android:background="#000000" />
 
 
-<!--    매콤한 치즈 곱창 예시1    -->
-
+        <!--&lt;!&ndash; 안좋아하는 음식 &ndash;&gt;-->
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:id="@+id/hate_food"
+            android:layout_width="365dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#B4B4FF"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <ImageView
-                android:scaleType = "fitXY"
-                android:layout_width="165dp"
-                android:layout_height="115dp"
-                android:src="@drawable/cheese_tripe"/>
-            <Button
-                android:layout_marginLeft="-15dp"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:background="#00ff0000"
-                android:textColor="#000000"
-                android:text="매콤한 치즈곱창"
-                android:textSize="23dp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
+
+                    <!-- 취소 버튼 -->
+                    <ImageButton
+                        android:id="@+id/cancel2"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel"></ImageButton>
+
+
+                    <Button
+                        android:id="@+id/hate_btn1"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="육류"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn2"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="-90dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="해물류"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn3"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="255dp"
+                        android:layout_marginTop="-90dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="채소"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn4"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="갑각류"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn5"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="-90dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="유제품"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn6"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="255dp"
+                        android:layout_marginTop="-90dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="달걀"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn7"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="건어물"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn8"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="-90dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="견과류"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn9"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="255dp"
+                        android:layout_marginTop="-90dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="과일류"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn10"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="버섯류"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn11"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="-90dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="밀가루"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn12"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="255dp"
+                        android:layout_marginTop="-90dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="쌀"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:id="@+id/hate_btn13"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED"
+                        android:text="곡류"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="-105dp"
-            android:layout_marginLeft="178dp"
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:text="돌굴러가유"
-            android:textSize="17dp" />
 
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:rating="2"
-            android:stepSize="1"
-            style="@style/Widget.AppCompat.RatingBar.Indicator"
-            android:layout_marginTop="-6dp"
-            android:layout_marginLeft="178dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <!--&lt;!&ndash;  아래 버튼 4개  &ndash;&gt;-->
 
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:layout_marginTop="5dp"
-            android:background="#000000" />
-
-
-<!--    매콤한 치즈 곱창 음식1    -->
+        <!--&lt;!&ndash;  알레르기  &ndash;&gt;-->
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:id="@+id/allergy"
+            android:layout_width="365dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#B4B4FF"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <ImageView
-                android:layout_width="165dp"
-                android:layout_height="115dp"
-                android:src="@drawable/food1"
-                android:scaleType = "fitXY"/>
-            <Button
-                android:layout_marginLeft="-15dp"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:background="#00ff0000"
-                android:textColor="#000000"
-                android:text="까르보나라 당면"
-                android:textSize="23dp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
+
+                    <!-- 취소 버튼 -->
+                    <ImageButton
+                        android:id="@+id/cancel3"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="-40dp"
+                        android:text="알레르기 체크하기!"
+                        android:textSize="25dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="30dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="우유 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="호두 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="난류(가금류) 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="메밀 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="아황산류 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="대두 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="복숭아 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="토마토 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="땅콩 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="닭고기 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="쇠고기 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="밀 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="고등어 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="게 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="새우 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="돼지고기 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="오징어 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="조개류 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="홍합 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="전복 알레르기"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+                    <CheckBox
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:paddingLeft="20dp"
+                        android:text="굴 알레르기"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="-105dp"
-            android:layout_marginLeft="178dp"
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:text="바위굴러가유"
-            android:textSize="17dp" />
-
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:rating="3.5"
-            android:stepSize="0.5"
-            style="@style/Widget.AppCompat.RatingBar.Indicator"
-            android:layout_marginLeft="178dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:layout_marginTop="5dp"
-            android:background="#000000" />
-    </LinearLayout>
-    </ScrollView>
-    </LinearLayout>
-
-
-<!--    요리 후기 페이지    -->
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="match_parent"
-        android:id="@+id/postscript"
-        android:visibility="gone"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:background="#B4B4FF">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:layout_marginLeft="48dp"
-        android:layout_width="365dp">
-
-    <!-- 취소 버튼 -->
-    <ImageButton
-        android:id="@+id/postscript_cancel"
-        android:src="@drawable/cancel"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="-5dp"
-        android:layout_width="40dp"
-        android:layout_height="45dp"></ImageButton>
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:text="요리 후기"
-            android:textSize="25dp"
-            android:layout_marginTop="-38dp"
-            android:layout_marginLeft="150dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:layout_marginTop="5dp"
-            android:background="#000000" />
-
-
-        <!--    후기 예시 음식1    -->
+        <!--        즐겨찾기        -->
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:id="@+id/bookmark"
+            android:layout_width="365dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#B4B4FF"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <ImageView
-                android:layout_width="165dp"
-                android:layout_height="140dp"
-                android:src="@drawable/food1"
-                android:scaleType = "fitXY"/>
-            <Button
-                android:layout_marginLeft="-15dp"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:background="#00ff0000"
-                android:textColor="#000000"
-                android:text="까르보나라 당면"
-                android:textSize="23dp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
+
+                    <!-- 취소 버튼 -->
+                    <ImageButton
+                        android:id="@+id/bookmark_cancel"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="-38dp"
+                        android:text="전체 숫자"
+                        android:textSize="22dp" />
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="260dp"
+                        android:layout_marginTop="-35dp"
+                        android:background="#00FF0000"
+                        android:text="폴더"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginLeft="-400dp"
+                        android:layout_marginTop="0dp"
+                        android:background="#000000" />
+
+
+                    <!--    매콤한 치즈 곱창 예시1    -->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="115dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cheese_tripe" />
+
+                        <Button
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="-15dp"
+                            android:background="#00ff0000"
+                            android:text="매콤한 치즈곱창"
+                            android:textColor="#000000"
+                            android:textSize="23dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="178dp"
+                        android:layout_marginTop="-105dp"
+                        android:text="돌굴러가유"
+                        android:textSize="17dp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="178dp"
+                        android:layout_marginTop="-6dp"
+                        android:numStars="5"
+                        android:rating="2"
+                        android:stepSize="1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+
+                    <!--    매콤한 치즈 곱창 음식1    -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="115dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/food1" />
+
+                        <Button
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="-15dp"
+                            android:background="#00ff0000"
+                            android:text="까르보나라 당면"
+                            android:textColor="#000000"
+                            android:textSize="23dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="178dp"
+                        android:layout_marginTop="-105dp"
+                        android:text="바위굴러가유"
+                        android:textSize="17dp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="178dp"
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:stepSize="0.5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="-105dp"
-            android:layout_marginLeft="178dp"
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:text="바위굴러가유"
-            android:textSize="17dp" />
 
-        <TextView
-            android:layout_marginLeft="178dp"
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:text="당면 말고 라면 사리..."
-            android:textSize="17dp" />
-
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:rating="3.5"
-            android:stepSize="0.5"
-            style="@style/Widget.AppCompat.RatingBar.Indicator"
-            android:layout_marginLeft="178dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-    </LinearLayout>
-    </ScrollView>
-    </LinearLayout>
-
-
-<!--    &lt;!&ndash;    요리 노트 페이지    &ndash;&gt;-->
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="match_parent"
-        android:id="@+id/foodnote"
-        android:visibility="gone"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:background="#B4B4FF">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:layout_marginLeft="48dp"
-        android:layout_width="365dp">
-
-<!--    &lt;!&ndash; 요리 노트 취소 버튼 &ndash;&gt;-->
-    <ImageButton
-        android:id="@+id/foodnote_cancel"
-        android:src="@drawable/cancel"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="-5dp"
-        android:layout_width="40dp"
-        android:layout_height="45dp"></ImageButton>
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:text="요리 노트"
-            android:textSize="25dp"
-            android:layout_marginTop="-38dp"
-            android:layout_marginLeft="150dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-<!--&lt;!&ndash;    요리 노트 전체 숫자    &ndash;&gt;-->
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:text="전체 숫자"
-            android:textSize="22dp"
-            android:layout_marginLeft="10dp"/>
-
-<!--&lt;!&ndash;    요리 노트 폴더 버튼    &ndash;&gt;-->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="폴더"
-            android:textSize="22dp"
-            android:layout_marginLeft="310dp"
-            android:layout_marginTop="-30dp"/>
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_marginTop="2dp"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-<!--&lt;!&ndash;   요리 노트에 글만 썼을 때     &ndash;&gt;-->
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:text="노트 제목"
-            android:textSize="22dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="10dp"/>
-
-<!--&lt;!&ndash;    요리 노트 작성 날짜    &ndash;&gt;-->
-
-        <TextView
-            android:layout_width="90dp"
-            android:layout_height="30dp"
-            android:text="작성 날짜"
-            android:textSize="22dp"
-            android:layout_marginLeft="235dp"
-            android:layout_marginTop="-30dp"/>
-
-        <ImageButton
-            android:id="@+id/cancel7"
-            android:src="@drawable/cancel"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="-36dp"
-            android:layout_marginLeft="325dp"
-            android:layout_width="40dp"
-            android:layout_height="45dp"></ImageButton>
-
-<!--&lt;!&ndash;    요리 노트에 글만 썼을 때 설명란    &ndash;&gt;-->
-
-        <TextView
-            android:layout_width="360dp"
-            android:layout_height="30dp"
-            android:text="간장3 설탕1 맛술1 3분간 끓이기..."
-            android:textSize="22dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_marginTop="2dp"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-
-<!--&lt;!&ndash;   요리 노트에 글, 사진을 넣었을 때    &ndash;&gt;-->
-
-        <TextView
-            android:layout_width="90dp"
-            android:layout_height="30dp"
-            android:text="노트 제목"
-            android:textSize="22dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="170dp"/>
-
-
-<!--&lt;!&ndash;    요리 노트 작성 날짜    &ndash;&gt;-->
-
-        <TextView
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:text="날짜"
-            android:textSize="22dp"
-            android:layout_marginLeft="275dp"
-            android:layout_marginTop="-30dp"/>
-
-        <ImageButton
-            android:id="@+id/cancel8"
-            android:src="@drawable/cancel"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="-36dp"
-            android:layout_marginLeft="325dp"
-            android:layout_width="40dp"
-            android:layout_height="45dp"></ImageButton>
-
-<!--&lt;!&ndash;    요리 노트 이미지    &ndash;&gt;-->
-
-        <ImageView
-            android:scaleType = "fitXY"
-            android:layout_width="160dp"
-            android:layout_height="145dp"
-            android:layout_marginTop="-47dp"
-            android:src="@drawable/cheese_tripe"/>
-
-<!--&lt;!&ndash;   요리 노트 사진 설명    &ndash;&gt;-->
-
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="65dp"
-            android:text="간장3 설탕1 맛술1 3분간 끓이기..."
-            android:textSize="18dp"
-            android:layout_marginLeft="170dp"
-            android:layout_marginTop="-60dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:layout_marginTop="-5dp"
-            android:background="#000000" />
-
-<!--&lt;!&ndash;    요리 노트 -> 새 노트 추가하기    &ndash;&gt;-->
-
-        <Button
-            android:id="@+id/typebtn1"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="330dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-    </LinearLayout>
-    </ScrollView>
-    </LinearLayout>
-
-
-
-
-<!--     검색 최근 내역     -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:id="@+id/search"
-        android:visibility="gone"
-        android:layout_marginTop="60dp"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:background="#B4B4FF">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:layout_marginLeft="48dp"
-        android:layout_width="410dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:textSize="28dp"
-            android:text="검색 내역1" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-        <ImageButton
-            android:id="@+id/search_cancel1"
-            android:src="@drawable/cancel"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="-42dp"
-            android:layout_marginLeft="370dp"
-            android:layout_width="40dp"
-            android:layout_height="45dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:textSize="28dp"
-            android:text="검색 내역2" />
-
-        <ImageButton
-            android:id="@+id/search_cancel2"
-            android:src="@drawable/cancel"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="-42dp"
-            android:layout_marginLeft="370dp"
-            android:layout_width="40dp"
-            android:layout_height="45dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:textSize="28dp"
-            android:text="검색 내역3" />
-
-        <ImageButton
-            android:id="@+id/search_cancel3"
-            android:src="@drawable/cancel"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="-42dp"
-            android:layout_marginLeft="370dp"
-            android:layout_width="40dp"
-            android:layout_height="45dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:background="#000000" />
-    </LinearLayout>
-    </ScrollView>
-    </LinearLayout>
-
-
-<!--  즐겨찾기에 폴더 버튼을 눌렀을 때  -->
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="match_parent"
-        android:id="@+id/bookmark_folder"
-        android:visibility="gone"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:background="#B4B4FF">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:layout_marginLeft="48dp"
-        android:layout_width="365dp">
-
-    <!-- 취소 버튼 -->
-    <ImageButton
-        android:id="@+id/bookmark_folder_cancel"
-        android:src="@drawable/cancel"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="-5dp"
-        android:layout_width="40dp"
-        android:layout_height="45dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="전체 숫자"
-        android:textSize="22dp"
-        android:layout_marginTop="-38dp"
-        android:layout_marginLeft="50dp"/>
-
-<!--    폴더 버튼    -->
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="폴더"
-            android:textSize="22dp"
-            android:layout_marginLeft="310dp"
-            android:layout_marginTop="-30dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_marginTop="3dp"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/folder_remove"/>
-
-        <Button
-            android:layout_width="240dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="-55dp"
-            android:gravity="center_vertical"
-            android:textSize="18dp"
-            android:text="전체 숫자"
-            android:textColor="#000000"
-            android:background="#00FF0000"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_marginTop="5dp"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/folder_remove"/>
-
-        <Button
-            android:layout_width="280dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="-55dp"
-            android:gravity="center_vertical"
-            android:textSize="18dp"
-            android:text="내가 만든 폴더 이름(숫자)"
-            android:textColor="#000000"
-            android:background="#00FF0000"/>
-
-        <Button
-            android:layout_width="45dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="315dp"
-            android:layout_marginTop="-60dp"/>
-
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_marginTop="5dp"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-        <Button
-            android:id="@+id/new_folder_btn"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="280dp"
-            android:layout_marginTop="450dp"
-            android:background="@drawable/circle"
-            android:backgroundTint="#FF6495ED" />
-    </LinearLayout>
-    </ScrollView>
-    </LinearLayout>
-
-
-
-<!--     내가 본 레시피     -->
-
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="match_parent"
-        android:id="@+id/identify_food"
-        android:visibility="gone"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:background="#B4B4FF">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_height="match_parent"
-        android:layout_gravity="right"
-        android:orientation="vertical"
-        android:layout_marginLeft="48dp"
-        android:layout_width="365dp">
-
-    <!-- 내가 본 레시피 취소 버튼 -->
-    <ImageButton
-        android:id="@+id/identify_food_cancel"
-        android:src="@drawable/cancel"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="-5dp"
-        android:layout_width="40dp"
-        android:layout_height="45dp"/>
-
-        <TextView
-            android:layout_width="160dp"
-            android:layout_height="match_parent"
-            android:text="내가 본 레시피"
-            android:textSize="25dp"
-            android:gravity="left"
-            android:layout_marginTop="-42dp"
-            android:layout_marginLeft="50dp"/>
-
-        <ImageButton
-            android:layout_width="38dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="280dp"
-            android:layout_marginTop="-31dp"/>
-
-        <ImageButton
-            android:layout_width="38dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="323dp"
-            android:layout_marginTop="-40dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:background="#000000" />
-
-
-        <!--  첫번째 음식  -->
+        <!--    요리 후기 페이지    -->
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:id="@+id/postscript"
+            android:layout_width="365dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#B4B4FF"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="110dp"
-                android:src="@drawable/cheese_tripe"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <Button
-                android:layout_marginLeft="-5dp"
-                android:layout_width="170dp"
-                android:layout_height="50dp"
-                android:background="#00ff0000"
-                android:textColor="#000000"
-                android:gravity="left"
-                android:text="매콤한 치즈곱창"
-                android:textSize="18dp"/>
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
 
+                    <!-- 취소 버튼 -->
+                    <ImageButton
+                        android:id="@+id/postscript_cancel"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel"></ImageButton>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-38dp"
+                        android:text="요리 후기"
+                        android:textSize="25dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+
+                    <!--    후기 예시 음식1    -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="165dp"
+                            android:layout_height="140dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/food1" />
+
+                        <Button
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="-15dp"
+                            android:background="#00ff0000"
+                            android:text="까르보나라 당면"
+                            android:textColor="#000000"
+                            android:textSize="23dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="178dp"
+                        android:layout_marginTop="-105dp"
+                        android:text="바위굴러가유"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="178dp"
+                        android:text="당면 말고 라면 사리..."
+                        android:textSize="17dp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="178dp"
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:stepSize="0.5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="-110dp"
-            android:layout_marginLeft="160dp"
-            android:layout_width="130dp"
-            android:layout_height="30dp"
-            android:text="돌굴러가유"
-            android:textSize="18dp" />
 
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="327dp"
-            android:layout_marginTop="-70dp"/>
-
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:rating="2"
-            android:stepSize="1"
-            style="@style/Widget.AppCompat.RatingBar.Indicator"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="25dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-        <!-- 2번째 음식 -->
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:layout_marginTop="5dp"
-            android:background="#000000" />
-
-
+        <!--    &lt;!&ndash;    요리 노트 페이지    &ndash;&gt;-->
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:id="@+id/foodnote"
+            android:layout_width="365dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#B4B4FF"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="110dp"
-                android:src="@drawable/food1"/>
-            <Button
-                android:layout_marginLeft="-9dp"
-                android:layout_width="250dp"
-                android:layout_height="60dp"
-                android:background="#00ff0000"
-                android:textColor="#000000"
-                android:gravity="left"
-                android:text="까르보나라 당면"
-                android:textSize="18dp"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
+
+                    <!--    &lt;!&ndash; 요리 노트 취소 버튼 &ndash;&gt;-->
+                    <ImageButton
+                        android:id="@+id/foodnote_cancel"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel"></ImageButton>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-38dp"
+                        android:text="요리 노트"
+                        android:textSize="25dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="#000000" />
+
+                    <!--&lt;!&ndash;    요리 노트 전체 숫자    &ndash;&gt;-->
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:text="전체 숫자"
+                        android:textSize="22dp" />
+
+                    <!--&lt;!&ndash;    요리 노트 폴더 버튼    &ndash;&gt;-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="310dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="폴더"
+                        android:textSize="22dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="2dp"
+                        android:background="#000000" />
+
+                    <!--&lt;!&ndash;   요리 노트에 글만 썼을 때     &ndash;&gt;-->
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="노트 제목"
+                        android:textSize="22dp" />
+
+                    <!--&lt;!&ndash;    요리 노트 작성 날짜    &ndash;&gt;-->
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="235dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="작성 날짜"
+                        android:textSize="22dp" />
+
+                    <ImageButton
+                        android:id="@+id/cancel7"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="-36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel"></ImageButton>
+
+                    <!--&lt;!&ndash;    요리 노트에 글만 썼을 때 설명란    &ndash;&gt;-->
+
+                    <TextView
+                        android:layout_width="360dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="간장3 설탕1 맛술1 3분간 끓이기..."
+                        android:textSize="22dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="2dp"
+                        android:background="#000000" />
+
+
+                    <!--&lt;!&ndash;   요리 노트에 글, 사진을 넣었을 때    &ndash;&gt;-->
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="8dp"
+                        android:text="노트 제목"
+                        android:textSize="22dp" />
+
+
+                    <!--&lt;!&ndash;    요리 노트 작성 날짜    &ndash;&gt;-->
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="날짜"
+                        android:textSize="22dp" />
+
+                    <ImageButton
+                        android:id="@+id/cancel8"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="325dp"
+                        android:layout_marginTop="-36dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel"></ImageButton>
+
+                    <!--&lt;!&ndash;    요리 노트 이미지    &ndash;&gt;-->
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="145dp"
+                        android:layout_marginTop="-47dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cheese_tripe" />
+
+                    <!--&lt;!&ndash;   요리 노트 사진 설명    &ndash;&gt;-->
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="170dp"
+                        android:layout_marginTop="-60dp"
+                        android:text="간장3 설탕1 맛술1 3분간 끓이기..."
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="-5dp"
+                        android:background="#000000" />
+
+                    <!--&lt;!&ndash;    요리 노트 -> 새 노트 추가하기    &ndash;&gt;-->
+
+                    <Button
+                        android:id="@+id/typebtn1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="280dp"
+                        android:layout_marginTop="330dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED" />
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="-110dp"
-            android:layout_marginLeft="158dp"
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:text="바위굴러가유"
-            android:textSize="18dp" />
 
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="327dp"
-            android:layout_marginTop="-70dp"/>
-
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:rating="3.5"
-            android:stepSize="0.5"
-            style="@style/Widget.AppCompat.RatingBar.Indicator"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="25dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-
-        <!--      세번째 음식    -->
-
-        <View
+        <!--     검색 최근 내역     -->
+        <LinearLayout
+            android:id="@+id/search"
             android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:layout_marginTop="5dp"
-            android:background="#000000" />
+            android:layout_height="400dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="60dp"
+            android:background="#B4B4FF"
+            android:orientation="vertical"
+            android:visibility="gone">
 
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="검색 내역1"
+                        android:textSize="28dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="#000000" />
+
+                    <ImageButton
+                        android:id="@+id/search_cancel1"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="370dp"
+                        android:layout_marginTop="-42dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="검색 내역2"
+                        android:textSize="28dp" />
+
+                    <ImageButton
+                        android:id="@+id/search_cancel2"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="370dp"
+                        android:layout_marginTop="-42dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="검색 내역3"
+                        android:textSize="28dp" />
+
+                    <ImageButton
+                        android:id="@+id/search_cancel3"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="370dp"
+                        android:layout_marginTop="-42dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="#000000" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <!--  즐겨찾기에 폴더 버튼을 눌렀을 때  -->
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:id="@+id/bookmark_folder"
+            android:layout_width="365dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#B4B4FF"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="110dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/food2"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <Button
-                android:layout_marginLeft="-9dp"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:background="#00ff0000"
-                android:textColor="#000000"
-                android:text="고구마 피자"
-                android:gravity="left"
-                android:textSize="18dp"/>
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
+
+                    <!-- 취소 버튼 -->
+                    <ImageButton
+                        android:id="@+id/bookmark_folder_cancel"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="-38dp"
+                        android:text="전체 숫자"
+                        android:textSize="22dp" />
+
+                    <!--    폴더 버튼    -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="310dp"
+                        android:layout_marginTop="-30dp"
+                        android:text="폴더"
+                        android:textSize="22dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="3dp"
+                        android:background="#000000" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/folder_remove" />
+
+                    <Button
+                        android:layout_width="240dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="-55dp"
+                        android:background="#00FF0000"
+                        android:gravity="center_vertical"
+                        android:text="전체 숫자"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/folder_remove" />
+
+                    <Button
+                        android:layout_width="280dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="75dp"
+                        android:layout_marginTop="-55dp"
+                        android:background="#00FF0000"
+                        android:gravity="center_vertical"
+                        android:text="내가 만든 폴더 이름(숫자)"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="45dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="315dp"
+                        android:layout_marginTop="-60dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+                    <Button
+                        android:id="@+id/new_folder_btn"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="280dp"
+                        android:layout_marginTop="450dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="#FF6495ED" />
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="-110dp"
-            android:layout_marginLeft="160dp"
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:text="자갈굴러가유"
-            android:textSize="18dp" />
 
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="327dp"
-            android:layout_marginTop="-70dp"/>
+        <!--     내가 본 레시피     -->
 
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:rating="2.5"
-            android:stepSize="0.5"
-            style="@style/Widget.AppCompat.RatingBar.Indicator"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="25dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/identify_food"
+            android:layout_width="365dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#B4B4FF"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:layout_marginTop="7dp"
-            android:background="#000000" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    </LinearLayout>
-    </ScrollView>
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="365dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
 
-<!--        메뉴에 즐겨찾기-->
+                    <!-- 내가 본 레시피 취소 버튼 -->
+                    <ImageButton
+                        android:id="@+id/identify_food_cancel"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="-5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cancel" />
+
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="-42dp"
+                        android:gravity="left"
+                        android:text="내가 본 레시피"
+                        android:textSize="25dp" />
+
+                    <ImageButton
+                        android:layout_width="38dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="280dp"
+                        android:layout_marginTop="-31dp" />
+
+                    <ImageButton
+                        android:layout_width="38dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="323dp"
+                        android:layout_marginTop="-40dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:background="#000000" />
+
+
+                    <!--  첫번째 음식  -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:src="@drawable/cheese_tripe" />
+
+                        <Button
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="-5dp"
+                            android:background="#00ff0000"
+                            android:gravity="left"
+                            android:text="매콤한 치즈곱창"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="-110dp"
+                        android:text="돌굴러가유"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="327dp"
+                        android:layout_marginTop="-70dp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="25dp"
+                        android:numStars="5"
+                        android:rating="2"
+                        android:stepSize="1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <!-- 2번째 음식 -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:src="@drawable/food1" />
+
+                        <Button
+                            android:layout_width="250dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="-9dp"
+                            android:background="#00ff0000"
+                            android:gravity="left"
+                            android:text="까르보나라 당면"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="158dp"
+                        android:layout_marginTop="-110dp"
+                        android:text="바위굴러가유"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="327dp"
+                        android:layout_marginTop="-70dp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="25dp"
+                        android:numStars="5"
+                        android:rating="3.5"
+                        android:stepSize="0.5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <!--      세번째 음식    -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="5dp"
+                        android:background="#000000" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/food2" />
+
+                        <Button
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="-9dp"
+                            android:background="#00ff0000"
+                            android:gravity="left"
+                            android:text="고구마 피자"
+                            android:textColor="#000000"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="-110dp"
+                        android:text="자갈굴러가유"
+                        android:textSize="18dp" />
+
+                    <Button
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="327dp"
+                        android:layout_marginTop="-70dp" />
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="160dp"
+                        android:layout_marginTop="25dp"
+                        android:numStars="5"
+                        android:rating="2.5"
+                        android:stepSize="0.5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:layout_marginTop="7dp"
+                        android:background="#000000" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <!--        메뉴에 즐겨찾기-->
         <LinearLayout
             android:id="@+id/bookmarking"
             android:layout_width="365dp"
             android:layout_height="match_parent"
-            android:visibility="gone"
             android:layout_gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -1748,7 +1770,6 @@
                         android:layout_marginTop="102dp"
                         android:text="냄비"
                         android:textSize="27dp" />
-
 
 
                     <ImageView
@@ -1810,14 +1831,14 @@
             </ScrollView>
         </LinearLayout>
 
-<!--        최근 본 상품-->
+        <!--        최근 본 상품-->
         <LinearLayout
             android:id="@+id/product"
-            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -1891,7 +1912,7 @@
                         android:layout_marginTop="233dp"
                         android:background="#000000" />
 
-<!--                    //2-->
+                    <!--                    //2-->
                     <TextView
                         android:layout_width="229dp"
                         android:layout_height="30dp"
@@ -1929,14 +1950,14 @@
             </ScrollView>
         </LinearLayout>
 
-<!--        찜한 목록-->
+        <!--        찜한 목록-->
         <LinearLayout
             android:id="@+id/product_storage"
-            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -2012,7 +2033,7 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="-170dp"
                         android:layout_marginTop="185dp"
-                        android:text="삭제"/>
+                        android:text="삭제" />
 
                     <Button
                         android:id="@+id/basket_btn"
@@ -2020,7 +2041,7 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="6dp"
                         android:layout_marginTop="185dp"
-                        android:text="장바구니"/>
+                        android:text="장바구니" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2029,7 +2050,7 @@
                         android:layout_marginTop="233dp"
                         android:background="#000000" />
 
-<!--                    2-->
+                    <!--                    2-->
                     <TextView
                         android:layout_width="229dp"
                         android:layout_height="30dp"
@@ -2060,7 +2081,7 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="-170dp"
                         android:layout_marginTop="325dp"
-                        android:text="삭제"/>
+                        android:text="삭제" />
 
                     <Button
                         android:id="@+id/basket2_btn"
@@ -2068,7 +2089,7 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="6dp"
                         android:layout_marginTop="325dp"
-                        android:text="장바구니"/>
+                        android:text="장바구니" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2077,7 +2098,7 @@
                         android:layout_marginTop="380dp"
                         android:background="#000000" />
 
-<!--                    3-->
+                    <!--                    3-->
                     <TextView
                         android:layout_width="229dp"
                         android:layout_height="30dp"
@@ -2107,14 +2128,14 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="-170dp"
                         android:layout_marginTop="475dp"
-                        android:text="삭제"/>
+                        android:text="삭제" />
 
                     <Button
                         android:layout_width="100dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="6dp"
                         android:layout_marginTop="475dp"
-                        android:text="장바구니"/>
+                        android:text="장바구니" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2127,14 +2148,14 @@
 
         </LinearLayout>
 
-<!--        장바구니-->
+        <!--        장바구니-->
         <LinearLayout
             android:id="@+id/product_storage2"
-            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -2263,7 +2284,7 @@
                         android:layout_marginLeft="-360dp"
                         android:layout_marginTop="520dp"
                         android:text="총 상품 가격 : "
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="120dp"
@@ -2271,7 +2292,7 @@
                         android:layout_marginLeft="-120dp"
                         android:layout_marginTop="560dp"
                         android:text="총 배송비 :"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="160dp"
@@ -2279,7 +2300,7 @@
                         android:layout_marginLeft="-120dp"
                         android:layout_marginTop="600dp"
                         android:text="총 결제 예상금액 :"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2320,19 +2341,19 @@
                         android:layout_height="60dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="670dp"
-                        android:text="주문하기"/>
+                        android:text="주문하기" />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
 
-<!--        주문 내역-->
+        <!--        주문 내역-->
         <LinearLayout
             android:id="@+id/product_list"
-            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -2404,14 +2425,14 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="-175dp"
                         android:layout_marginTop="175dp"
-                        android:text="교환, 반품"/>
+                        android:text="교환, 반품" />
 
                     <Button
                         android:layout_width="89dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="175dp"
-                        android:text="배송조회"/>
+                        android:text="배송조회" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2420,7 +2441,7 @@
                         android:layout_marginTop="233dp"
                         android:background="#000000" />
 
-<!--                    // 2-->
+                    <!--                    // 2-->
                     <TextView
                         android:layout_width="229dp"
                         android:layout_height="30dp"
@@ -2450,14 +2471,14 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="-176dp"
                         android:layout_marginTop="325dp"
-                        android:text="교환, 반품"/>
+                        android:text="교환, 반품" />
 
                     <Button
                         android:layout_width="90dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="2dp"
                         android:layout_marginTop="325dp"
-                        android:text="배송조회"/>
+                        android:text="배송조회" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2469,14 +2490,14 @@
             </ScrollView>
         </LinearLayout>
 
-<!--        내가 쓴 후기-->
+        <!--        내가 쓴 후기-->
         <LinearLayout
             android:id="@+id/evaluation"
-            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -2549,14 +2570,14 @@
                         android:layout_height="45dp"
                         android:layout_marginLeft="-170dp"
                         android:layout_marginTop="190dp"
-                        android:text="수정"/>
+                        android:text="수정" />
 
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="45dp"
                         android:layout_marginLeft="6dp"
                         android:layout_marginTop="190dp"
-                        android:text="삭제"/>
+                        android:text="삭제" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2595,14 +2616,14 @@
                         android:layout_height="45dp"
                         android:layout_marginLeft="-170dp"
                         android:layout_marginTop="330dp"
-                        android:text="수정"/>
+                        android:text="수정" />
 
                     <Button
                         android:layout_width="70dp"
                         android:layout_height="45dp"
                         android:layout_marginLeft="6dp"
                         android:layout_marginTop="330dp"
-                        android:text="삭제"/>
+                        android:text="삭제" />
 
 
                     <View
@@ -2616,14 +2637,14 @@
             </ScrollView>
         </LinearLayout>
 
-<!--        설정-->
+        <!--        설정-->
         <LinearLayout
             android:id="@+id/setting"
-            android:visibility="gone"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -2669,10 +2690,10 @@
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="30dp"
-                        android:layout_marginTop="30dp"
                         android:layout_marginLeft="-360dp"
+                        android:layout_marginTop="30dp"
                         android:text="돌굴러가유"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <!--                <TextView-->
                     <!--                    android:layout_width="100dp"-->
@@ -2693,22 +2714,24 @@
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="30dp"
-                        android:layout_marginTop="257dp"
                         android:layout_marginLeft="-103dp"
+                        android:layout_marginTop="257dp"
                         android:text="주소 수정"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
+
                     <EditText
                         android:layout_width="350dp"
                         android:layout_height="100dp"
-                        android:layout_marginTop="330dp"
                         android:layout_marginLeft="-97dp"
-                        android:background="@color/white"/>
+                        android:layout_marginTop="330dp"
+                        android:background="@color/white" />
+
                     <Button
                         android:layout_width="80dp"
                         android:layout_height="50dp"
-                        android:layout_marginTop="408dp"
                         android:layout_marginLeft="-80dp"
-                        android:text="수정"/>
+                        android:layout_marginTop="408dp"
+                        android:text="수정" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2720,24 +2743,24 @@
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="30dp"
-                        android:layout_marginTop="460dp"
                         android:layout_marginLeft="-360dp"
+                        android:layout_marginTop="460dp"
                         android:text="휴대폰 번호 수정"
-                        android:textSize="20dp"/>
+                        android:textSize="20dp" />
 
                     <EditText
                         android:layout_width="350dp"
                         android:layout_height="100dp"
-                        android:layout_marginTop="530dp"
                         android:layout_marginLeft="-149dp"
-                        android:background="@color/white"/>
+                        android:layout_marginTop="530dp"
+                        android:background="@color/white" />
 
                     <Button
                         android:layout_width="80dp"
                         android:layout_height="50dp"
-                        android:layout_marginTop="608dp"
                         android:layout_marginLeft="-80dp"
-                        android:text="수정"/>
+                        android:layout_marginTop="608dp"
+                        android:text="수정" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2749,18 +2772,18 @@
                     <TextView
                         android:layout_width="80dp"
                         android:layout_height="30dp"
-                        android:layout_marginTop="660dp"
                         android:layout_marginLeft="-357dp"
+                        android:layout_marginTop="660dp"
                         android:text="현재 버전"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                     <TextView
                         android:layout_width="60dp"
                         android:layout_height="30dp"
-                        android:layout_marginTop="660dp"
                         android:layout_marginLeft="-2dp"
+                        android:layout_marginTop="660dp"
                         android:text="22.1.1"
-                        android:textSize="18dp"/>
+                        android:textSize="18dp" />
 
                     <View
                         android:layout_width="match_parent"
@@ -2777,12 +2800,12 @@
 
 
         <LinearLayout
-            android:visibility="gone"
             android:id="@+id/menu"
             android:layout_width="365dp"
             android:layout_height="match_parent"
             android:layout_gravity="right"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -2964,6 +2987,5 @@
         </LinearLayout>
 
 
-
-</FrameLayout>
+    </FrameLayout>
 </RelativeLayout>

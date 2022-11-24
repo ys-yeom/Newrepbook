@@ -56,6 +56,13 @@
         <activity android:name=".GalleryActivity"></activity>
         <activity android:name=".AddPostActivity"></activity>
         <activity android:name=".shopping_basket"></activity>
+        <activity android:name=".search_view"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ui1">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
@@ -66,10 +73,10 @@
         <activity android:name=".MainActivity"
             android:exported="true"
             android:usesCleartextTraffic="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity android:name=".practice.postprint"></activity>
 

@@ -40,7 +40,7 @@ dependencies {
     implementation "com.kakao.sdk:v2-link-rx:2.9.0" // 메시지(카카오링크)
     implementation "com.kakao.sdk:v2-navi:2.9.0" // 카카오내비
     implementation 'com.github.bumptech.glide:glide:4.11.0' //이미지 핸들링
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0' //리사이클러뷰
 
 
         implementation platform('com.google.firebase:firebase-bom:30.3.1')
@@ -59,10 +59,12 @@ dependencies {
 
     implementation"com.navercorp.nid:oauth-jdk8:5.1.0" // jdk 8
     implementation files('libs/oauth-5.1.0')
+
     implementation 'androidx.room:room-runtime:2.3.0'
     implementation 'com.google.firebase:firebase-auth:21.0.8'
     implementation 'com.google.firebase:firebase-database:20.0.6'
     implementation 'com.google.firebase:firebase-storage:20.0.2'
+
     def android_x_version = "1.0.0"
     implementation "androidx.appcompat:appcompat:$android_x_version"
     implementation "androidx.legacy:legacy-support-core-utils:$android_x_version"

@@ -53,6 +53,7 @@
                         android:textSize="20dp" />
 
                     <CheckBox
+                        android:id="@+id/checkall_ak"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="210dp"/>
@@ -106,6 +107,7 @@
                         android:textSize="20dp"/>
 
                     <CheckBox
+                        android:id="@+id/ch1"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="170dp"/>
@@ -160,6 +162,7 @@
                         android:textSize="20dp"/>
 
                     <CheckBox
+                        android:id="@+id/ch2"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="170dp"/>
@@ -213,6 +216,7 @@
                         android:textSize="20dp"/>
 
                     <CheckBox
+                        android:id="@+id/ch3"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="170dp"/>
@@ -260,6 +264,7 @@
                         android:textSize="20dp" />
 
                     <CheckBox
+                        android:id="@+id/chackall_2"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="210dp"/>
@@ -315,6 +320,7 @@
                         android:textSize="20dp"/>
 
                     <CheckBox
+                        android:id="@+id/ch4"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="170dp"/>
@@ -369,6 +375,7 @@
                         android:textSize="20dp"/>
 
                     <CheckBox
+                        android:id="@+id/ch5"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="170dp"/>
@@ -423,6 +430,7 @@
                         android:textSize="20dp"/>
 
                     <CheckBox
+                        android:id="@+id/ch6"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginLeft="170dp"/>
@@ -448,6 +456,7 @@
                     android:layout_height="80dp">
 
                     <Button
+                        android:id="@+id/shopping_btn"
                         android:layout_width="250dp"
                         android:layout_height="60dp"
                         android:layout_marginTop="10dp"
